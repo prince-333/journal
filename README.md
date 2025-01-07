@@ -2,4 +2,6 @@
 
 
 For the first few weeks, I'm going to review this 12 hours video from BroCode and take in-depth notes on them, trying to incorporate at least 1-2 hours everyday on this journal and studying. 
-Start coding with PYTHON in 5 minutes! 🐍![image](https://github.com/user-attachments/assets/5282f387-07c6-498c-bffc-c9e02b6e526e)
+Start coding with PYTHON in 5 minutes! Start coding with PYTHON in 5 minutes! 🐍
+![image](https://github.com/user-attachments/assets/235d797c-9549-414a-902e-71b7f24707d4)
+
