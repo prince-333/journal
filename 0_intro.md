@@ -7,3 +7,4 @@ https://www.youtube.com/watch?v=ix9cRaBkVe0&t=964s
 Daily minjeong
 ![image](https://github.com/user-attachments/assets/dd65043f-b1af-4f0a-9876-7397f2db5431)
 ![112](https://github.com/user-attachments/assets/df4fecd3-169c-4c7d-b707-fcb2fe66750c)
+
