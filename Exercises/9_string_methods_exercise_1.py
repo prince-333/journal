@@ -9,7 +9,7 @@ length = len(username)
 characters = username.isalpha()
 spaces = username.find(' ')
 
-if length > 12 and characters == False and spaces > 0:
+if length > 12 and characters == False and spaces >  0:
     print('You have exceeded the character count.')
     print('Only characters are allowed.')
     print('Make sure to not includes spaces.')
@@ -27,3 +27,10 @@ if length <= 12 and characters == True and spaces < 0:
 else:
     print('Please try again.')
 
+age = int(input('Now please enter your age: '))
+age_verificaiton = 'Adult' if age >= 18 else 'Minor'
+
+if age_verificaiton == 'Adult':
+    print('You may now enter the site.')
+elif age_verificaiton == 'Minor':
+    print('You must be 18+ to access this website.')
