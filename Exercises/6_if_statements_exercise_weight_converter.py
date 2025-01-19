@@ -12,4 +12,4 @@ elif unit == "L":
     unit = "Kgs."
     print("Your weight is {} {}".format(weight, unit))
 else:
-    print("{} is neither (K or L)".format(unit))
+    print("{} is neither (K or L)".format(unit)) 
