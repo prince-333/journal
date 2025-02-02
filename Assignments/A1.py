@@ -1,3 +1,5 @@
+# Original File, everything here works just a backup file just in case i mess up the part 4 section lol
+
 import math
 
 '''
@@ -80,9 +82,18 @@ while not selection_input: # Will keep asking until the condition is satisfied, 
 # Part 3: If all the conditions are satisified, it will print calculated values of the equations regarding the planet.
 
     elif selection_input == True and selection == 'b' and planet_status == True: 
-        print(f'Here is the following information about the planet:\n[{planet_name}]')
-        print(f'Information:\Radius: {planet_radius} m\nVelocity: {planet_velocity} m/s\nTemperature: {planet_temperature}\n{divider}')
+        print(f'Here is the following information about the planet:\n[{planet_name}]\nInformation:')
+        print(f'Radius: {planet_radius} kg\nVelocity: {planet_velocity} km/h\nTemperature: {planet_temperature}°F\n{divider}')
+
+        # Calculating the inputted values of the user about the planet to planet attributes.
+        planet_circumference = ((2 * math.pi) * planet_radius)
+        planet_core_temp = ((planet_temperature - 32) * (5/9) + 273.15)
+        planet_rotational_period = ((2 * math.pi) / planet_velocity)  
+
+        print(f'Calculating new attributes...\nCircumference: {planet_circumference:.2f}')
+        print(f'Core Temperature: {planet_core_temp:.2f} K\nPlanet Rotational Period: {planet_rotational_period:2f} Hours\n{divider}')
 
         selection_input = False
+        
         
         
