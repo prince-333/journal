@@ -1,0 +1,1 @@
+test = input('Input something: ').strip
