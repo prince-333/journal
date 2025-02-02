@@ -35,10 +35,10 @@ Part #1 Below is the menu setup in a loop, with a set variable (selection_input)
 
 '''
 
+print(f'{divider}\nHello, Welcome to Planet Manager!')
+
 while not selection_input: # Will keep asking until the condition is satisfied, 'esc', 'a', or 'b'.
-    print(f'{divider}\nHello, Welcome to Planet Manager!\nPlease select one of the following options: ')
-    selection = input('a) Register Planet \nb) Planet Info\nesc) Close Program\n[Your Selection]: ')
-    selection = selection.lower()
+    selection = input('Please select one of the following options:\na) Register Planet \nb) Planet Info\nesc) Close Program\n[Your Selection]: ').lower()
 
     if selection == 'esc':     # To escape the loop and "shutdown" the program.
         selection_input = True # Setting this function to True will break the loop and continue the program.
@@ -69,6 +69,7 @@ while not selection_input: # Will keep asking until the condition is satisfied, 
             planet_radius = float(input('The radius of the planet?: '))
             planet_velocity = float(input('What is the tangential velocity of the planet?: '))
             planet_temperature = float(input('What is the temperature of the planet?: '))
+            print(divider)
 
             if planet_radius > 0 and planet_velocity > 0 and planet_temperature > 0:
                 planet_status = True # Confirm that the planet exists.
@@ -80,7 +81,8 @@ while not selection_input: # Will keep asking until the condition is satisfied, 
 
     elif selection_input == True and selection == 'b' and planet_status == True: 
         print(f'Here is the following information about the planet:\n[{planet_name}]')
-        print(f'Radius: {planet_radius} m\nVelocity: {planet_velocity} m/s\nTemperature: {planet_temperature}')
+        print(f'Information:\Radius: {planet_radius} m\nVelocity: {planet_velocity} m/s\nTemperature: {planet_temperature}\n{divider}')
 
         selection_input = False
+        
         
