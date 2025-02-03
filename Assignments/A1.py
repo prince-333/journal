@@ -22,9 +22,6 @@ planet_status = False # Will determine if a planet is registered or not. Selecti
 
 # These values will continue or break the loop depending on user input. Used in "Part 2".
 
-planet_radius = -1.0
-planet_velocity = -1.0
-planet_temperature = -1.0
 
 # The following is for the equations used in "Part 3"
 
@@ -65,6 +62,9 @@ while not selection_input: # Will keep asking until the condition is satisfied, 
     if selection_input == True and selection == 'a':
         print(f'{divider}\nPlease answer appropriately to the following:\n ')
         planet_name = input('The name of the planet: ')
+        planet_radius = -1.0
+        planet_velocity = -1.0
+        planet_temperature = -1.0
 
         while planet_radius < 0 or planet_velocity < 0 or planet_temperature < 0: # If either is negative, will make an error message to retry.
 
