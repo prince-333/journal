@@ -67,10 +67,21 @@ while not selection_input: # Will keep asking until the condition is satisfied, 
 
         while planet_radius < 0 or planet_velocity < 0 or planet_temperature < 0: # If either is negative, will make an error message to retry.
 
-            planet_radius = float(input('The radius of the planet?: '))
-            planet_velocity = float(input('What is the tangential velocity of the planet?: '))
-            planet_temperature = float(input('What is the temperature of the planet?: '))
-            print(divider)
+            planet_radius = float(input('The radius of the planet?: ').strip())
+            if planet_radius < 0 :
+                print(f'{divider}\nPlease enter a positive value.\n{divider}'.strip())
+            else:
+                while planet_velocity < 0:
+                    planet_velocity = float(input('What is the tangential velocity of the planet?: '))
+                    if planet_velocity < 0:
+                        print(f'{divider}\nPlease enter a positive value.\n{divider}'.strip())
+                    else:
+                        while planet_temperature < 0:
+                            planet_temperature = float(input('What is the temperature of the planet?: '))
+                            if planet_temperature <0:
+                                print(f'{divider}\nPlease enter a positive value.\n{divider}'.strip())
+                            else:
+                                print(f'{divider}')
 
         # Code below will add the inputted values towards a new string that will add to another, if it is the initial planet, only such information will be printed.
         new_planet = f'{planet_name},{planet_radius},{planet_velocity},{planet_temperature}'
