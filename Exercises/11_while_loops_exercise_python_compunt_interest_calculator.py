@@ -29,7 +29,7 @@ while rate <= 0:
         print('Please enter a positive integer.')
 
 while time_period <= 0:
-    time_period = float(input('Enter the interest rate: '))
+    time_period = float(input('Enter the time period: '))
     if time_period <= 0:
         print('Please enter a positive integer.')
 
