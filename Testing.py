@@ -36,12 +36,12 @@ for file_name in directory_list:
 
             # Date Tuple to add to dictionary, needs if statement because values needed are in this loop, so cannot do it beforehand compared to stations.
             date_tuple = (station_id, temp, precip)
-
             if date not in dates:
                 dates[date] = []
-            dates[date].append(date_tuple) # Finish processing 1 file.
+            else:
+                dates[date].append(date_tuple) # Finish processing 1 file.
 
 num_dates = len(dates)
 print(f'Total number of stations: {num_files}')
 print(f'total number of dates: {num_dates} ')
-# Gotta print highest record now and finally finished part 1 lol.
+# Gotta print highest record now.
